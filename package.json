@@ -1,1 +1,13 @@
-
+{
+  "name": "ntumeet",
+  "version": "1.0.0",
+  "description": "Video conferencing app like Google Meet / Zoom",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}
