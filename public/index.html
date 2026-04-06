@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Ntumeet – Video Conference</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📹 Ntumeet</h1>
+      <div class="room-controls">
+        <input type="text" id="roomIdInput" placeholder="Enter room ID" value="demo">
+        <button id="joinBtn">Join / Start Meeting</button>
+      </div>
+    </header>
+    
+    <div class="video-grid" id="videoGrid"></div>
+    
+    <div class="controls">
+      <button id="toggleAudio" class="control-btn">🔊 Mute</button>
+      <button id="toggleVideo" class="control-btn">📷 Stop Video</button>
+      <button id="shareScreen" class="control-btn">🖥️ Share Screen</button>
+      <button id="endCall" class="control-btn danger">🚪 Leave Meeting</button>
+    </div>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-peer@9.11.1/simplepeer.min.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
